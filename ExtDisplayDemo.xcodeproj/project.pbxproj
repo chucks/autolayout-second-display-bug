@@ -18,6 +18,8 @@
 		13CFADDF173EDBA6009ECD8C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CFADDE173EDBA6009ECD8C /* Default-568h@2x.png */; };
 		13CFADE2173EDBA6009ECD8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CFADE0173EDBA6009ECD8C /* MainStoryboard.storyboard */; };
 		13CFADE5173EDBA6009ECD8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CFADE4173EDBA6009ECD8C /* ViewController.m */; };
+		13CFADEC173EE28F009ECD8C /* SecondaryAutoLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CFADEB173EE28F009ECD8C /* SecondaryAutoLayout.xib */; };
+		13CFADEE173EE5FD009ECD8C /* SecondarySpringStruts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CFADED173EE5FD009ECD8C /* SecondarySpringStruts.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		13CFADE1173EDBA6009ECD8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		13CFADE3173EDBA6009ECD8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		13CFADE4173EDBA6009ECD8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13CFADEB173EE28F009ECD8C /* SecondaryAutoLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondaryAutoLayout.xib; sourceTree = "<group>"; };
+		13CFADED173EE5FD009ECD8C /* SecondarySpringStruts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondarySpringStruts.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				13CFADE3173EDBA6009ECD8C /* ViewController.h */,
 				13CFADE4173EDBA6009ECD8C /* ViewController.m */,
 				13CFADCF173EDBA6009ECD8C /* Supporting Files */,
+				13CFADEB173EE28F009ECD8C /* SecondaryAutoLayout.xib */,
+				13CFADED173EE5FD009ECD8C /* SecondarySpringStruts.xib */,
 			);
 			path = ExtDisplayDemo;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				13CFADDD173EDBA6009ECD8C /* Default@2x.png in Resources */,
 				13CFADDF173EDBA6009ECD8C /* Default-568h@2x.png in Resources */,
 				13CFADE2173EDBA6009ECD8C /* MainStoryboard.storyboard in Resources */,
+				13CFADEC173EE28F009ECD8C /* SecondaryAutoLayout.xib in Resources */,
+				13CFADEE173EE5FD009ECD8C /* SecondarySpringStruts.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

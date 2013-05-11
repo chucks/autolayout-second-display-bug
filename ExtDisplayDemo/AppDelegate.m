@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -41,6 +43,30 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)registerScreenConnectionNotificationHandlers
+{
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    
+    [center addObserver:self selector:@selector(handleScreenDidConnectNotification:)
+                   name:UIScreenDidConnectNotification object:nil];
+    [center addObserver:self selector:@selector(handleScreenDidDisconnectNotification:)
+                   name:UIScreenDidDisconnectNotification object:nil];
+}
+
+-(ViewController*) mainViewcontroller {
+    return (ViewController*) self.window.rootViewController;
+}
+
+- (void)handleScreenDidConnectNotification:(NSNotification*)aNotification
+{
+    [[self mainViewcontroller] secondaryDisplayDidConnect:aNotification.object];
+}
+
+- (void)handleScreenDidDisconnectNotification:(NSNotification*)aNotification
+{
+    [[self mainViewcontroller] secondaryDisplayDidDisconnect];
 }
 
 @end

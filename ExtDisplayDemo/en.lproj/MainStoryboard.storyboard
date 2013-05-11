@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ul-AC-Bq5">
+                                <connections>
+                                    <action selector="useAutoLayoutValueChanged:" destination="2" eventType="valueChanged" id="gGL-s7-3cW"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Use Auto-Layout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-CS-YUt">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Secondary Display" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-ov-B1u">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ul-AC-Bq5" firstAttribute="top" secondItem="5" secondAttribute="top" constant="389" id="14y-8b-8lZ"/>
+                            <constraint firstItem="6ul-AC-Bq5" firstAttribute="leading" secondItem="KkJ-CS-YUt" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="BPf-pe-ITk"/>
+                            <constraint firstItem="KkJ-CS-YUt" firstAttribute="centerY" secondItem="6ul-AC-Bq5" secondAttribute="centerY" type="default" id="HMF-1S-SQk"/>
+                            <constraint firstItem="e8A-ov-B1u" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="209" id="Ni6-ii-bS2"/>
+                            <constraint firstItem="KkJ-CS-YUt" firstAttribute="trailing" secondItem="e8A-ov-B1u" secondAttribute="trailing" type="default" id="jfb-gN-3tf"/>
+                            <constraint firstItem="e8A-ov-B1u" firstAttribute="leading" secondItem="KkJ-CS-YUt" secondAttribute="leading" type="default" id="m3T-R3-BeV"/>
+                            <constraint firstItem="e8A-ov-B1u" firstAttribute="top" secondItem="5" secondAttribute="top" constant="349" id="w2B-fy-QUL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="useAutoLayoutSwitch" destination="6ul-AC-Bq5" id="lez-Nm-hMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>

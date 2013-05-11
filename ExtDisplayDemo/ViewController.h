@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) BOOL useAutoLayoutOnSecodaryDisplay;
+
+
+// handlers for secondary display
+- (void)secondaryDisplayDidConnect:(UIScreen*) secondScreen;
+- (void)secondaryDisplayDidDisconnect;
+
 @end
